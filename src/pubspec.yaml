@@ -21,6 +21,25 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.7
 
+flutter_native_splash:
+  color: "#0B0B0B"
+  image: assets/splash_image.png
+  web: true
+
+  ios: false
+  macos: false
+
+  android_12:
+    color: "#0B0B0B"
+    image: assets/splash_image.png
 
 flutter:
+  uses-material-design: true
+  assets:
+    - assets/splash_image.png
+    - assets/login_bg.png
+    - assets/chat_bg.png
+
+
