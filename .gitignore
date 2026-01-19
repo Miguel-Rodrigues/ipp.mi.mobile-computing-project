@@ -4,10 +4,14 @@
 *.log
 *.pyc
 *.swp
+.DS_Store
+.atom/
+.build/
 .buildlog/
 .history
-
-
+.svn/
+.swiftpm/
+migrate_working_dir/
 
 # Flutter repo-specific
 /bin/cache/
@@ -28,6 +32,12 @@
 version
 analysis_benchmark.json
 
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
 # packages file containing multi-root paths
 .packages.generated
 
@@ -39,6 +49,7 @@ analysis_benchmark.json
 **/generated_plugin_registrant.dart
 .packages
 .pub-preload-cache/
+.pub-cache/
 .pub/
 build/
 flutter_*.png
@@ -56,6 +67,9 @@ unlinked_spec.ds
 **/android/**/GeneratedPluginRegistrant.java
 **/android/key.properties
 *.jks
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
 
 # iOS/XCode related
 **/ios/**/*.mode1v3
@@ -117,3 +131,6 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# Obfuscation related
+app.*.map.json
