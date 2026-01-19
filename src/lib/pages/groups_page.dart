@@ -95,7 +95,7 @@ class _GroupsPageState extends State<GroupsPage> {
                   }
 
                   // filtra grupos onde members[groupId][uid] == true
-                  final map = Map<String, dynamic>.from(val as Map);
+                  final map = Map<String, dynamic>.from(val);
                   final groups = <String>[];
 
                   for (final entry in map.entries) {

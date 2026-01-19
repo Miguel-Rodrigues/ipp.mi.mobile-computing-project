@@ -35,7 +35,7 @@ class _ChatPageState extends State<ChatPage> {
       final value = event.snapshot.value;
       if (value is! Map) return;
 
-      final data = Map<String, dynamic>.from(value as Map);
+      final data = Map<String, dynamic>.from(value);
 
       setState(() {
         _messages.add(Message.fromMap(data));

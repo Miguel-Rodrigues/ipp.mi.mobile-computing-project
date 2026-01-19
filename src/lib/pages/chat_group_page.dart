@@ -63,7 +63,7 @@ class _ChatGroupPageState extends State<ChatGroupPage> {
       final value = event.snapshot.value;
       if (value is! Map) return;
 
-      final map = Map<String, dynamic>.from(value as Map);
+      final map = Map<String, dynamic>.from(value);
 
       final msg = _ChatMsg(
         id: event.snapshot.key ?? '',
@@ -90,7 +90,7 @@ class _ChatGroupPageState extends State<ChatGroupPage> {
       final next = <String>{};
 
       if (value is Map) {
-        final map = Map<String, dynamic>.from(value as Map);
+        final map = Map<String, dynamic>.from(value);
         for (final e in map.entries) {
           final uid = e.key;
           final isTyping = e.value == true;

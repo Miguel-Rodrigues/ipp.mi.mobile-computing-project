@@ -319,7 +319,7 @@ class _HealthPageState extends State<HealthPage> {
 
                       Card(
                         elevation: 0,
-                        color: theme.colorScheme.surfaceVariant.withAlpha(140),
+                        color: theme.colorScheme.surfaceContainerHighest.withAlpha(140),
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(14)),
                         child: ListTile(
