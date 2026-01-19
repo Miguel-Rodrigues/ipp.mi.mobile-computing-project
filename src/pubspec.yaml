@@ -15,6 +15,7 @@ dependencies:
   firebase_auth: ^5.7.0
   firebase_database: ^11.0.4
   google_sign_in: ^6.1.6
+  table_calendar: ^3.2.0
 
 dev_dependencies:
   flutter_test:
@@ -41,5 +42,6 @@ flutter:
     - assets/splash_image.png
     - assets/login_bg.png
     - assets/chat_bg.png
+    - assets/menu_bg.png
 
 
